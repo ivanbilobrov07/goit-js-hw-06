@@ -3,5 +3,5 @@ const nameInputRef = document.querySelector("#name-input");
 
 nameInputRef.addEventListener("input", (event) => {
   nameOutputRef.textContent =
-    event.target.value === "" ? "Anonymous" : event.target.value;
+    event.currentTarget.value === "" ? "Anonymous" : event.currentTarget.value;
 });
